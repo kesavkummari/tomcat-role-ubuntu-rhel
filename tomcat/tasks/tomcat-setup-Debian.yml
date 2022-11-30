@@ -55,6 +55,15 @@
     extra_opts: "--strip-components=1"
     creates: /usr/share/tomcat/bin
 
+- name: Download Application Artifact .war 
+  get_url:
+    url: "https://github.com/kesavkummari/opscloud/blob/main/target/opscloud-5.0.0.war"
+    dest: "/usr/share/tomcat/webapps/"
+    owner: tomcat
+    group: tomcat
+    mode: '0777'
+    remote_src: yes
+
 - name: Copy tomcat service file
   template:
     src: templates/tomcat.service.j2
