@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+<profiles>
+  <profile>
+    <id>cloudbinary-maven-central-store</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>cloudbinary-maven-central-store</id>
+        <url>https://cloudbinary-191323423716.d.codeartifact.us-east-1.amazonaws.com/maven/maven-central-store/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+  <activeProfiles>
+    <activeProfile>default</activeProfile>
+  </activeProfiles>
+<servers>
+  <server>
+    <id>cloudbinary-maven-central-store</id>
+    <username>aws</username>
+    <password></password>
+  </server>
+</servers>
+</settings>
